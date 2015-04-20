@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:padding="35dip"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/continue_button"
+                android:text="@string/continue_label" 
+				android:textSize="20sp"
+				android:textStyle="italic"/>
+            <Button
+                android:id="@+id/new_game_button"
+                android:text="@string/new_game_label"
+                android:textSize="20sp"
+				android:textStyle="italic" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/about_button"
+                android:text="@string/about_label"
+				android:textSize="20sp"
+				android:textStyle="italic"/>
+
+            <Button
+                android:id="@+id/exit_button"
+                android:text="@string/exit_label" 
+                android:textSize="20sp"
+				android:textStyle="italic"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="@string/main_title"
+        android:textSize="24.5sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
